@@ -1,0 +1,9 @@
+/* For debugging purposes. */
+div {
+  border: 1px solid black;
+}
+
+/* For debugging purposes. */
+.blog-header>div {
+  border: 1px dashed gray;
+}
