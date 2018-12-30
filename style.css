@@ -3,11 +3,17 @@
     background-repeat: no-repeat;
     height: 100%;
     overflow: hidden;
+    margin: -8px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 8px;
 }
 
 ul {
-  list-style-type: none;
-  overflow: hidden;
+    margin-left: -25px;
+    list-style-type: none;
+    overflow: hidden;
+    padding-right:25px;
 }
 
 li {
@@ -29,4 +35,71 @@ li a:hover:not(.active) {
 
 .active {
   color: lightgray;
+}
+
+.join {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.header_title {
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+}
+
+#content {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+#social {
+    background-color: lightgray;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    color: #1B2631;
+}
+
+footer {
+  background-color: #1B2631;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  color: gray;
+}
+
+html {
+    background-color: #1B2631; 
+    font-family: Andale Mono !important;
+}
+
+body {
+    background-color: white;
+    margin: -8px;
+}
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
