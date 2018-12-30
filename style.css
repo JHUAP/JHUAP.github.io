@@ -1,0 +1,32 @@
+#background_img {
+    background: url(gilman.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: lightgray;
+}
+
+.active {
+  color: lightgray;
+}
