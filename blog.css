@@ -1,9 +1,53 @@
 /* For debugging purposes. */
-div {
+/*div {
   border: 1px solid black;
-}
+}*/
 
 /* For debugging purposes. */
-.blog-header>div {
+/*.blog-header > div {
   border: 1px dashed gray;
+}*/
+
+.container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item {
+  display: flex inline;
+  justify-content: center;
+  margin: 5px 5px 5px 0px;
+  padding: 5px;
+}
+
+.blog-title {
+  margin: 5px;
+}
+.blog-title>h2 {
+  display: inline;
+}
+
+.blog-author {
+  text-align: center;
+}
+.blog-author>h3 {
+  display: inline;
+}
+.blog-date {
+  text-align: center;
+}
+.blog-date>h3 {
+  display: inline;
+}
+
+.media {
+  margin: 5px;
+  padding: 5px;
+  border: 10px solid;
+  display: inline-block;
+}
+
+img {
+  max-width: 30%;
+  display: block;
 }
