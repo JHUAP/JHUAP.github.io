@@ -16,17 +16,21 @@
 .item {
   display: flex inline;
   justify-content: center;
-  margin: 5px 5px 5px 0px;
-  padding: 5px;
-}
-
-.blog-title {
   margin: 5px;
 }
+
+/* Blogpost structure. */
+.blog-post {
+  padding: 10px;
+  text-align: center;
+  border: black 1px solid;
+}
+
 .blog-title>h2 {
   display: inline;
 }
 
+/* Blogpost header. */
 .blog-author {
   text-align: center;
 }
@@ -40,14 +44,15 @@
   display: inline;
 }
 
+/* Media. */
 .media {
   margin: 5px;
   padding: 5px;
-  border: 10px solid;
   display: inline-block;
+  text-align: center;
+  max-width: 50%;
+  border: 1px black solid;
 }
-
 img {
-  max-width: 30%;
-  display: block;
+  width: 100%;
 }
