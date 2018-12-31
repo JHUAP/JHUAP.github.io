@@ -8,96 +8,6 @@
   border: 1px dashed gray;
 }*/
 
-html {
-  background-color: #1B2631;
-  font-family: Andale Mono, serif;
-}
-
-/* Nav-bar. */
-.navbar {
-  background: #1B2631;
-}
-
-.navbar-item {
-  margin-top:10px;
-}
-
-ul {
-  margin-left: -25px;
-  list-style-type: none;
-  overflow: hidden;
-  padding-right:25px;
-}
-
-li {
-  float: left;
-  padding: 10px;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  color: lightgray;
-}
-
-.active {
-  color: lightgray;
-}
-
-.join {
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-}
-
-.header_title {
-  font-weight: bold;
-  text-align: left;
-  padding: 20px;
-}
-
-/* Footer. */
-#social {
-  background-color: lightgray;
-  width: 100%;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  text-align: center;
-  color: #1B2631;
-}
-
-footer {
-  background-color: #1B2631;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  text-align: center;
-  color: gray;
-}
-
-
-
-body {
-  background-color: white;
-  margin: -8px;
-}
-
-.container {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.item {
-  display: flex inline;
-  justify-content: center;
-  margin: 5px;
-}
-
 /* Blogpost structure. */
 .blog-post {
   padding: 10px;
@@ -106,13 +16,13 @@ body {
   max-width: 50%;
 }
 
+/* Blogpost header. */
 .blog-title>h2 {
   display: inline;
 }
 
-/* Blogpost header. */
 .blog-author {
-  text-align: center;
+text-align: center;
 }
 .blog-author>h3 {
   display: inline;
@@ -122,6 +32,18 @@ body {
 }
 .blog-date>h3 {
   display: inline;
+}
+
+/* Blogpost header: Grid with two columns for author and date. */
+.container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item {
+  display: flex inline;
+  justify-content: center;
+  margin: 5px;
 }
 
 /* Media. */
