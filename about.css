@@ -1,0 +1,34 @@
+.about {
+    text-align: center;
+}
+
+.about-text {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-people {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#about-pres {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#about-copres1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#about-copres2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
