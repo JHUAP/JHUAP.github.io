@@ -12,19 +12,19 @@ html {
     margin-top:10px;
 }
 
-ul {
+.navbar > ul {
     margin-left: -25px;
     list-style-type: none;
     overflow: hidden;
     padding-right:25px;
 }
 
-li {
+.navbar > ul > li {
     float: left;
     padding: 10px;
 }
 
-li a {
+.navbar > ul > li > a {
     display: block;
     color: white;
     text-align: center;
