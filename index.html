@@ -9,40 +9,92 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
-    <div id="background_img">
+    <!-- <div id="background_img"> -->
+    <div style="background-color: #1B2631">
         <ul>
-            <li><a href="#home" class="header_title">JOHNS HOPKINS UNIVERSITY <br> ANIMATION PROGRAM</a></li>
-            <li style="float:right"><a href="blog.html">BLOG</a></li>
-            <li style="float:right"><a href="resources.html">RESOURCES</a></li>
-            <li style="float:right"><a href="about.html">ABOUT</a>
-            <li style="float:right"><a class="active" href="#home">HOME</a></li>
+            
+            <li style="float:left"><a href="#home" class="header_title">JOHNS HOPKINS UNIVERSITY <br> ANIMATION PROGRAM</a></li>
+            
+            <li style="text-align: center"><a href="blog.html"></a></li>
+            <li style="text-align: center"><a href="blog.html"></a></li>
+            <li style="text-align: center"><a class="active" href="#home">HOME</a></li>
+            <li style="text-align: center"><a href="about.html">ABOUT US</a>
+            <li style="text-align: center"><a href="resources.html">RESOURCES</a></li>
+            <li style="text-align: center"><a href="blog.html">BLOG</a></li>
+            
+            
+            
+            
+            <li style="float:right"><a href="https://www.facebook.com/groups/285862702067977/"><i class="fa fa-facebook-f" style="font-size:24px; color:white"></i></a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li style="float:right"><a href="https://github.com/JHUAnimation"><i class="fa fa-github" style="font-size:24px; color:white"></i></a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li style="float:right"><a href="mailto:jhuanimation@gmail.com"><i class="fa fa-envelope-o" style="font-size:24px; color:white"></i></a></li>
         </ul>
-        
-        <center>
-            <h2 style="color:lightgray; padding-top: 10%">JOHNS HOPKINS ANIMATION PROGRAM</h2>
-            <h1 style="color:white; font-size: 300%; padding-bottom: 12.5%">Bridging the gap between <br> art and engineering.</h1>
-        </center>
-        
-        <br>
         
     </div>
     
+    
+        
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="gilman.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="gilman.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="gilman.jpg" style="width:100%">
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
     <body>
+    
+    
+    <center>
+            <h2 style="color:black; padding-top:10%">JOHNS HOPKINS ANIMATION PROGRAM</h2>
+            <h1 style="color:black; font-size: 300%">Bridging the gap between <br> art and engineering.</h1>
+    </center>
+    
+  
         
         <div id="content">
         
             <h1 style="font-weight: lighter;">We strive to connect animation enthusiasts across the Johns Hopkins campus.</h1>
             <h4 style="font-weight: lighter;">Our purpose is to unite students with similar interests in animation, and allow them to find a welcoming environment to both express and further their passions.</p>
-            
-            <br>
-            
-            <h1 style="font-weight: lighter;">Enjoy Winter Break!</h1>
-            <br>
-            
-            <h1 style="font-weight: lighter;">Artist Spotlight: Niels Prayer</h1>
-            
-            <iframe src="https://player.vimeo.com/video/296712143" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p><a href="https://vimeo.com/296712143">CAIRN</a> from <a href="https://vimeo.com/nielsprayer">Niels PRAYER</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
             
             <br>
             
@@ -59,7 +111,7 @@
                     <h4 style="font-weight: lighter;">We focus on providing Blender workshop lessons and 2D animation lessons. We hope to build a full animated Blender scene with contributions from all of our members by the end of this semester!</h4></div>
             </div>
             
-            <div style="padding:50px;">
+            <div style="padding-left:50px; padding-right:50px; padding-top:50px">
                 <div style="display: inline-block;"><img style="padding-right: 50px;" src="Lima01.jpg" alt="Smiley face" width="250" height="250" align="left">
                     <h2 style="font-weight: lighter;">collaboration </h2>
                     <h4 style="font-weight: lighter;">We strive to have all our members participate in the storyboarding, concept art, and realization process.</h4></div>
@@ -67,6 +119,7 @@
             
         </div>
 
+        <!--
         <div id="social">
             <a href="https://www.facebook.com/groups/285862702067977/"><i class="fa fa-facebook-f" style="font-size:24px; color:#1B2631"></i></a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -74,6 +127,18 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="mailto:jhuanimation@gmail.com"><i class="fa fa-envelope-o" style="font-size:24px; color:#1B2631"></i></a>
         </div>
+        -->
+        
+        <center>
+        <h1 style="font-weight: lighter;">Artist Spotlight: Niels Prayer</h1>
+            
+            <iframe src="https://player.vimeo.com/video/296712143" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/296712143">CAIRN</a> from <a href="https://vimeo.com/nielsprayer">Niels PRAYER</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </center>
+        
+        <br>
+        <br>
+            
         
         <footer>
             <p>Johns Hopkins Computer Animation Program | Founded 2018</p>

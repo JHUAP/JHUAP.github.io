@@ -1,0 +1,89 @@
+<center>
+                    <div class="slideshow-container">
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="../images/bma1.jpg" style="width:70%">
+                    <div class="text">There is No Finished World — André Masson</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="../images/bma2.jpg" style="width:50%">
+                    <div class="text">Head of Picador with Broken Nose — Pablo Picasso</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="../images/bma3.jpg" style="width:70%">
+                    <div class="text">Artist in Greenland — Rockwell Kent</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="img_mountains_wide.jpg" style="width:70%">
+                    <div class="text">A Wild Scene — Thomas Cole</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="../images/bma5.jpg" style="width:40%">
+                    <div class="text">St. Michael and Satan — Benjamin West</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="../images/bma6.jpg" style="width:70%">
+                    <div class="text">Pierced Rock — Claude Monet</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="../images/bma7.jpg" style="width:70%">
+                    <div class="text">A Pair of Boots — Vincent van Gogh</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                    </div>
+                </center>
+
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1} 
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none"; 
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block"; 
+                    dots[slideIndex-1].className += " active";
+                    }                
+                </script>
