@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     
     <head>
         <title>JHU Animation Program - Home</title>
@@ -21,50 +21,79 @@
         <!-- Fab icons. -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    
-    <!-- <div id="background_img"> -->
-    <div>
-        <!-- Navbar code referenced from https://www.codeply.com/go/kTGlK9Axdk -->
-        <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center stylized-text">
-            <!-- Left content. -->
-            <a href="/" class="navbar-brand mr-0">Johns Hopkins University <br>Animation Program</a>
 
-            <!-- Collapsed navbar. -->
-            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center stylized-text">
+        <!-- Navbar left. -->
+        <a href="/" class="navbar-brand d-flex w-50 mr-auto">Johns Hopkins University <br> Animation Program</a>
 
-            <!-- Center. -->
-            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-                <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="header.html">HOME <span class="sr-only">Home</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources.html">RESOURCES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">BLOG</a>
-                    </li>
-                </ul>
+        <!-- Navbar collapse. -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!-- Right. -->
-                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/285862702067977/"><i class="fa fa-facebook mr-1 navbar-icon"></i></a> </li>
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/JHUAnimation"><i class="fa fa-github navbar-icon"></i></a> </li>
-                    <li class="nav-item"><a class="nav-link" href="mailto:jhuanimation@gmail.com"><i class="fa fa-envelope navbar-icon"></i></a> </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <!-- Navbar right. -->
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item active"><a class="nav-link" href="header.html">HOME <span class="sr-only">Home</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/285862702067977/"><i class="fa fa-facebook mr-1 navbar-icon"></i></a> </li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/JHUAnimation"><i class="fa fa-github navbar-icon"></i></a> </li>
+                <li class="nav-item"><a class="nav-link" href="mailto:jhuanimation@gmail.com"><i class="fa fa-envelope navbar-icon"></i></a> </li>
+            </ul>
+        </div>
+    </nav>
 
     <body>
         <div>
-            <h1>CONTENT</h1>
+            <div class="heading">
+                <div class="heading-img">
+                    <img src="res/bunny.gif" class="img-fluid" id="heading-img" alt="Stanford bunny">
+                </div>
+                <div class="mission">
+                    <h1>Bridging the gap between art and engineering.</h1>
+                </div>
+                <div class="about">
+                    <p>The JHU Computer Animation program aims to bring computer science and art together in the
+                        interdisciplinary field of animation. Through collaboration with the Maryland Institute College of
+                        Art (MICA), we will foster a professional relationship between Hopkins Engineering and MICA
+                        Animation that will inspire creativity and innovation.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="goals" id="goals-container">
+                <div class="goals-text goals-col1">
+                    <p>Learn about the animation pipeline.</p>
+                </div>
+                <div class="goals-image goals-col1">
+                    <img src="res/bunny.gif" class="img-thumbnail goals-img" alt="Stanford bunny">
+                </div>
+
+                <div class="goals-text goals-col2">
+                    <p>Apply engineering skills to create scripts in collaboration with MICA.</p>
+                </div>
+                <div class="goals-image goals-col2">
+                    <img src="res/bunny.gif" class="img-thumbnail goals-img" alt="Stanford bunny">
+                </div>
+
+
+                <div class="goals-text goals-col3">
+                    <p>Become immersed in a community centered around computer animation.</p>
+                </div>
+                <div class="goals-image goals-col3">
+                    <img src="res/bunny.gif" class="img-thumbnail goals-img" alt="Stanford bunny">
+                </div>
+            </div>
+
+            <div class="upcoming-event">
+                <h2>Upcoming event:</h2>
+                <a class="btn btn-primary" id="all-events-btn" href="resources.html">All events</a>
+            </div>
         </div>
+
 
         <!-- Bootstrap4 Javascript. -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

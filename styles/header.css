@@ -2,11 +2,132 @@
     font-family: Andale Mono, serif !important;
 }
 
-.navbar-icon {
-    font-size:50px;
-    color:white;
+p {
+    margin: 0;
+    padding: 0;
 }
 
-.white-text {
-    color:white;
+
+.navbar-icon {
+    font-size:50px;
+    color:black;
+}
+/*
+Heading:
+|---------|
+| mission |
+|---------|
+|  about  |
+|---------|
+ */
+.heading {
+    border: black 0px solid;
+    max-width: 60%;
+    margin: auto auto 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+.heading-img {
+    max-width: 50vh;
+    margin: auto;
+}
+.mission {
+    text-align: center;
+}
+.about {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+/*
+Goals:
+|-----|-----|-----|
+|photo|text |text |
+|text |text |photo|
+|photo|text |text |
+|-----|-----|-----|
+ */
+
+.goals {
+    text-align: center;
+    max-width: 70%;
+    margin: auto auto 20px auto;
+}
+
+#goals-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    border: 0 black solid;
+}
+
+.goals-text {
+    grid-column: 2 / span 2;
+
+    padding: 10px;
+
+    /* Horizontal, then vertical alignment of text. */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.goals-image {
+    grid-column: 1 / span 1;
+}
+
+.goals-img {
+    max-width: 120px;
+    border: 0;
+}
+
+.goals-col1 {
+    grid-row: 1 / span 1;
+}
+.goals-col2 {
+    grid-row: 2 / span 1;
+}
+.goals-col3 {
+    grid-row: 3 / span 1;
+}
+
+.goals ul {
+    list-style: none;
+}
+
+.upcoming-event {
+    text-align: center;
+
+    border: 1px black solid;
+    max-width: 40%;
+
+    margin: auto auto 20px auto;
+    padding: 10px;
+}
+
+
+#all-events-btn {
+    border: 0;
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width : 500px) {
+    .heading {
+        margin: auto auto 20px auto;
+        max-width: 90%;
+        padding: 10px;
+    }
+    .goals {
+        margin: auto auto 20px auto;
+        max-width: 90%;
+        padding: 10px;
+    }
+    .upcoming-event {
+        margin: auto auto 20px auto;
+        max-width: 90%;
+        padding: 10px;
+    }
 }
